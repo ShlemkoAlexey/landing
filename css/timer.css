@@ -1,0 +1,128 @@
+.timer-block{
+  background: #5ea6fc;
+  margin-top: -30px;
+  color: white;
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+
+  background-image: url(../src/timer/background.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 55vw;
+}
+.timer{
+
+}
+
+.timer-unit{
+  margin-left: 15vw;
+}
+.timer-unit p{
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+}
+.timer-unit p:nth-of-type(1){
+  font-size: 2.5vw;
+  font-weight: bold;
+  line-height: 1;
+  width: 25vw;
+
+}
+
+.timer-unit p:nth-of-type(2){
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.timer-unit p:nth-of-type(3){
+  font-size:2vw;
+}
+
+.timer-unit p:nth-of-type(4){
+  margin-top: -1.5vw;
+  font-size: 4.5vw;
+  font-weight: bold;
+}
+
+.timer-unit p:nth-of-type(5){
+  font-size: 2.5vw;
+  margin-left: 22.5vw;
+  margin-top: -1.5vw;
+}
+
+.timer-unit button{
+  background: white;
+  border: none;
+  color: black;
+  font-size: 1.5vw;
+  padding:  .75vw 2.5vw;;
+  cursor: pointer;
+  transition: .2s;
+  margin-left: 8vw;
+  margin-top: 1vw;
+}
+.timer-unit button:hover{
+  background:  lightgray;
+  transition: .2s;
+}
+/*https://github.com/objectivehtml/FlipClock/issues/296#issuecomment-275895997*/
+
+
+
+
+
+
+.flip-clock-wrapper ul li a div div.inn{
+     font-size: 2.5rem;
+  }
+ .flip-clock-wrapper ul li a div{
+   font-size: 3rem;
+     }
+ .flip-clock-wrapper ul {
+   width: 2.4rem;
+   height: 3rem;
+   font-size: 3rem;
+ }
+
+ .flip-clock-wrapper ul li {
+   line-height: 3rem;
+ }
+
+ /* Adjust the position of the top's dot */
+ .flip-clock-dot.top {
+   top: 1.2rem;
+ }
+ /* Adjust the position of the bottom's dot */
+ .flip-clock-dot.bottom {
+   bottom: 0;
+   top: 2.1rem;
+ }
+
+ .flip-clock-dot{
+   width: .5rem;
+   height: .5rem;
+ }
+
+ .flip-clock-divider {
+   width: 1rem;
+   height: 5rem;
+ }
+ .flip-clock-divider .flip-clock-label{
+   right: -4.5rem;
+}
+
+.flip-clock-divider.minutes .flip-clock-label {
+ right: -4.5rem;
+}
+.flip-clock-divider.seconds .flip-clock-label {
+ right: -4.1rem;
+}
+
+.flip-clock-label{
+  color: white !important;
+}
+
+body > div.timer-block > div > div > span.flip-clock-divider.days > span{
+  content: "Дней" !important;
+}

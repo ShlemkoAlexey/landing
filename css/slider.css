@@ -1,0 +1,99 @@
+.slider-block{
+
+}
+
+.slider-unit{
+  position: relative;
+}
+
+.slider-unit img{
+  width: 100%;
+}
+
+.slider-text{
+  display: inline-block;
+  background: black;
+  color: white;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  opacity: .7;
+  padding: 3vw;
+}
+
+.slider-text .slider-text-name{
+  font-size: 2vw;
+  font-weight: bold;
+  margin: 0;
+}
+.slider-text .slider-text-description{
+  font-size: 1.2vw;
+  font-weight: bold;
+  margin: 0;
+  margin-top: -.2vw;
+  margin-bottom: 2vw;
+}
+.slider-text div{
+  position: relative;
+}
+.slider-text div .slider-check-img{
+  display: inline-block;
+  width: 3vw !important;
+}
+.slider-text div p{
+  display: inline-block;
+  font-size: 2vw;
+  margin: 0;
+  margin-left: 2vw;
+  position: relative;
+  top: -.75vw;
+}
+.slider-text button{
+  background: white;
+  border: none;
+  color: black;
+  font-size: 1.5vw;
+  padding:  .75vw 2.5vw;;
+  cursor: pointer;
+  transition: .2s;
+  margin-left: 5vw;
+  margin-top: 1vw;
+}
+
+.slider-text button:hover{
+  background:  lightgray;
+  transition: .2s;
+
+}
+
+/*
+.slider-text p:nth-child(4){
+  display: inline-block;
+  font-size: 1.8vw;
+}
+.slider-text p:nth-child(6){
+  display: inline-block;
+  font-size: 1.8vw;
+}
+.slider-text p:nth-child(8){
+  display: inline-block;
+  font-size: 1.8vw;
+}
+*/
+
+.slider-block div img{
+  width: 100%;
+}
+.slider-block .slick-dots{
+  position: absolute;
+  bottom: 0;
+  padding: 1vw;
+}
+.slick-dots li button:before{
+  font-size: 1vw;
+  color: rgb(255, 255, 255);
+  opacity: .5;
+}
+.slick-dots li.slick-active button:before{
+  color: rgb(39, 182, 255);
+}

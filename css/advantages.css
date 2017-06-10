@@ -1,0 +1,29 @@
+.advantages-block{
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+.advantages-block p{
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.advantages-block div{
+  /*border: 1px solid lightblue;*/
+  display: inline-block;
+  width: 13vw;
+  margin: 2vw;
+  text-align: left;
+  vertical-align: top;
+}
+.advantages-block div img{
+  width: 70%;
+  margin-left: 15%;
+}
+.advantages-block div h5{
+  font-size: 1.25vw;
+  color: #5ea6fc;
+  height: 3.5vw;
+}
+.advantages-block div p{
+  font-size: .8vw;
+}
