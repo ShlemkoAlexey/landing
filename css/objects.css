@@ -1,0 +1,93 @@
+.objects-block{
+  text-align: center;
+  position: relative;
+}
+
+.objects-block .objects-block-logo{
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+.objects-block-carouser{
+  width: 80%;
+  margin-left: 10%;
+}
+.objects-block-carouser img{
+  opacity: .2;
+  transition: .5s;
+  margin: 2vw;
+  cursor: pointer;
+  outline:0;
+}
+.objects-block-carouser img:hover{
+  opacity: 1;
+  transition: .5s;
+}
+
+.objects-block-carouser img.active{
+  opacity: 1;
+}
+
+.objects-block .arrow{
+  position: absolute;
+  width: 3vw;
+  top: 9vw;
+  cursor: pointer;
+}
+
+.objects-block .arrow-left{
+  left: 5%;
+}
+
+.objects-block .arrow-right{
+  right: 5%;
+}
+.objects-block-units{
+  padding: 1vw  4vw;
+  background: #ededed;
+}
+.objects-block-units .unit{
+  background: white;
+
+}
+.objects-block-units .unit .unit-left{
+  display: inline-block;
+  width: 60%;
+}
+.objects-block-units .unit .unit-left img{
+  width: 100%;
+}
+.objects-block-units .unit .unit-right{
+  display: inline-block;
+  width: 39.5%;
+  vertical-align: top;
+  padding-bottom: 3vw;
+}
+.objects-block-units .unit .unit-right img{
+  width: 30%;
+  margin-left: 30%;
+}
+.objects-block-units .unit .unit-right p{
+  margin-left: 10%;
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.3vw;
+  font-weight: bold;
+}
+.objects-block-units .unit .unit-right p:first-of-type{
+  margin-top: 2vw;
+}
+.objects-block-units .unit .unit-right p:last-of-type{
+  margin-bottom: 3vw;
+}
+.objects-block-units .unit .unit-right a{
+  background: #5ea6fc;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: .35vw 1.2vw;
+  font-size: .9vw;
+}
+
+.colored{
+  color: #b7b1b1;
+}

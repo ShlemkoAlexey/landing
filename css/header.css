@@ -14,7 +14,7 @@ header div{
 }
 
 .header-left{
-  width: 30%;
+  width: 40%;
 
 }
 
@@ -37,7 +37,53 @@ header div{
 
 .header-central{
   width: 40%;
-  background: lightyellow
+}
+
+.header-central .header-central-top{
+  margin-top: .5vw;
+}
+.header-central .header-central-top p{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-right: 3vw;
+  font-size: .8vw;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.header-central .header-central-top p a{
+  color: black;
+  text-decoration: none;
+}
+
+
+.header-central .header-central-bottom{
+
+}
+.header-central .header-central-bottom ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-central .header-central-bottom ul li{
+  display: inline-block;
+  font-size: .7vw;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: .4vw;
+  margin-top: .5vw;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.header-central .header-central-bottom ul li:hover{
+  color: #5596fb;
+  transition: .3s;
+}
+.header-central .header-central-bottom ul li.active{
+  color: #5596fb;
+  text-decoration: underline;
 }
 
 
@@ -51,11 +97,33 @@ header div{
 
 
 
-
-
-
-
 .header-right{
-  width: 29%;
-  background: lightblue;
+  width: 19%;
+}
+.header-right .social-networks{
+  display: inline-block;
+  margin-top:  .8vw;
+}
+
+.header-right .social-networks a{
+  display: block;
+
+}
+
+.header-right .social-networks a img{
+  width: .9vw;
+}
+
+
+.header-right .main-site{
+  display: inline-block;
+  margin-top: 1.3vw;
+  margin-left: .3vw;
+}
+.header-right .main-site a{
+  background: #5ea6fc;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .5vw 1vw;
 }
