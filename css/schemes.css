@@ -26,6 +26,11 @@
   position: relative;
   top: 3vw;
 }
+
+.scheme .scheme-unit .scheme-img:hover{
+  background: #51b2f9;
+  border-radius: 100%;
+}
 .scheme .scheme-unit .arrow{
   display: inline-block;
   width: 33%;

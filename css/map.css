@@ -1,3 +1,11 @@
+#contacts-anchor{
+  font-size: 2.5vw;
+  font-weight: bold;
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
 .route{
   position: absolute;
   z-index: 10000;

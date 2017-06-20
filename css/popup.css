@@ -1,0 +1,99 @@
+.popup-shadow{
+  width: 100vw;
+  height: 100vh;
+  background: lightgray;
+  position: fixed;
+  top: 0;
+  opacity: .7;
+  display: none;
+  z-index: 100000000;
+}
+
+.popup{
+  width: 80vw;
+  position: fixed;
+  left: 10%;
+  top: 15%;
+  opacity: 1;
+  text-align: center;
+  font-family: MuseoSansCyrl_300, sans-serif;
+  display: none;
+  border: 3px solid #00acec;
+  z-index: 100000000;
+  background-image: url(../src/popupbackground.png);
+  background-color: white;
+  background-position: right bottom;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-device-width: 800px){
+  .popup{
+    top: 25%;
+    width: 60vw;
+    left: 20%;
+  }
+}
+.popup .close{
+  position: absolute;
+  right: .5vw;
+  top: .5vw;
+  opacity: .3;
+  transition: .3s;
+  width: 1.5vw;
+}
+.popup .close:hover{
+  opacity: 1;
+  cursor: pointer;
+  transition: .3s;
+}
+.popup h5{
+  text-transform: uppercase;
+  color: #00acec;
+  font-size: 2vw;
+  width: 50%;
+  margin-left: 25%;
+
+}
+.popup p{
+  text-transform: uppercase;
+  color: #979797;
+  font-size: 1.4vw;
+  width: 50%;
+  margin-left: 25%;
+  margin-bottom: 4vw;
+}
+.popup div{
+  display: inline-block;
+  width: 40%;
+  text-align: center;
+}
+.popup div input{
+  display: block;
+  width: 70%;
+  margin-left: 15%;
+  height: 2vw;
+  border: 2px solid #00acec;
+  margin-bottom: 2vw;
+  padding-left: 2vw;
+  font-size: 1.3vw;
+}
+
+.popup button{
+  display: block;
+  margin: auto;
+  margin-bottom: 3vw;
+  background: #5ea6fc;
+  border: none;
+  font-size: 1.5vw;
+  color: white;
+  padding: 1vw 3vw;
+  cursor: pointer;
+}
+
+.popup button:hover{
+
+}
+
+.popup button:active{
+
+}
