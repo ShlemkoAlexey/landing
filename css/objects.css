@@ -17,6 +17,7 @@
   margin: 2vw;
   cursor: pointer;
   outline:0;
+  width: 15vw;
 }
 .objects-block-carouser img:hover{
   opacity: 1;

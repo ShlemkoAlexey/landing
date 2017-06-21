@@ -1,0 +1,58 @@
+.managers-block{
+  text-align: center;
+  padding-left: 5%;
+}
+.managers-block p{
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+.managers-block div{
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+  position: relative;
+}
+.managers-block div img{
+  width: 25%;
+    display: inline-block;
+}
+.managers-block div p{
+
+  font-size: 1vw;
+}
+.managers-block div .manager-name{
+  position: absolute;
+  top: -1.5vw;
+  left: 31%;
+  font-size: 1.5vw;
+  color: #5ea6fc;
+  text-transform: uppercase;
+}
+.managers-block div div{
+  display: inline-block;
+  margin-top: 2vw;
+}
+.managers-block div div:nth-of-type(1){
+  width: 15%;
+  text-align: left;
+  margin-left: 5%;
+}
+.managers-block div div:nth-of-type(2){
+  width: 53%;
+  text-align: left;
+}
+
+
+
+.managers-block div div:nth-of-type(1) p{
+  font-size: .75vw;
+  margin: 0;
+  text-transform: uppercase;
+  margin: 1vw 0;
+}
+.managers-block div div:nth-of-type(2) p{
+  font-size: 1.10vw;
+  margin: 0;
+  text-transform: uppercase;
+  margin: .65vw 0;
+}

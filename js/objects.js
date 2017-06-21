@@ -1,13 +1,13 @@
 $(document).ready(function(){
-  $('.objects-block-carouser').slick({
-    accessibility: true,
-    arrows: false,
-    dots: false,
-    speed: 500,
-    infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 1
-  });
+  // $('.objects-block-carouser').slick({
+  //   accessibility: true,
+  //   arrows: false,
+  //   dots: false,
+  //   speed: 500,
+  //   infinite: true,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1
+  // });
 
   $('.objects-block-units').slick({
     accessibility: true,
