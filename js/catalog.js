@@ -5,7 +5,7 @@ $(document).ready(function(){
     arrows: false,
     dots: false,
     fade: true,
-    speed: 500
+    speed: 100
   });
 
   $("#catalog-slider-1").on("click", function(){

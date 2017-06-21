@@ -6,7 +6,7 @@
   top: 0;
   opacity: .7;
   display: none;
-  z-index: 100000000;
+  z-index: 100000;
 }
 
 .popup{
@@ -96,4 +96,28 @@
 
 .popup button:active{
 
+}
+
+.message{
+  position: fixed;
+  top:40%;
+  font-size: 2.5vw;
+  background: white;
+  border: 1px solid gray;
+  padding: 1vw;
+  margin: auto;
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  z-index: 100000;
+  opacity: .8;
+  display: none;
+}
+.success-message{
+  color: green;
+  border: 1px solid green;
+}
+.fail-message{
+  color: red;
+  border: 1px solid red;
 }
