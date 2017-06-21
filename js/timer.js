@@ -1,5 +1,10 @@
-var timer = $('.timer').FlipClock({
-  clockFace: 'DailyCounter'
+var date = new Date();
+var toEndOfDay = date.getHours()*3600 + date.getMinutes()*60 + date.getSeconds();
+var secondsInDay = 3600 * 24;
+
+var timer = $('.timer').FlipClock(secondsInDay - toEndOfDay, {
+  clockFace: 'DailyCounter',
+  countdown: true
 });
 
 $("body > div.timer-block > div > div > span.flip-clock-divider.days > span").html("Дней");

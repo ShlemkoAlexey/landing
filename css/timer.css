@@ -11,16 +11,29 @@
   background-size: 55vw;
 }
 .timer{
+  position: relative;
+  transform: scale(0.7);
+  left: -13.5vw;
+}
+
+.flip-clock-label{
+  font-size: 1.5vw;
+  color: white !important;
+  padding-left: 2vw;
 
 }
 
+body > div.timer-block > div > div > span.flip-clock-divider.days > span{  right: -95px !important;}
+body > div.timer-block > div > div > span.flip-clock-divider.hours > span.flip-clock-label{  right: -95px !important;}
+body > div.timer-block > div > div > span.flip-clock-divider.minutes > span.flip-clock-label{  right: -105px !important;}
+body > div.timer-block > div > div > span.flip-clock-divider.seconds > span.flip-clock-label{  right: -105px !important;}
 .timer-unit{
   margin-left: 15vw;
 }
 .timer-unit p{
   margin: 0;
   padding: 0;
-  text-align: justify;
+  /*text-align: justify;*/
 }
 .timer-unit p:nth-of-type(1){
   font-size: 2.5vw;
@@ -71,7 +84,7 @@
 
 
 
-
+/*
 
 .flip-clock-wrapper ul li a div div.inn{
      font-size: 2.5rem;
@@ -89,11 +102,11 @@
    line-height: 3rem;
  }
 
- /* Adjust the position of the top's dot */
+
  .flip-clock-dot.top {
    top: 1.2rem;
  }
- /* Adjust the position of the bottom's dot */
+
  .flip-clock-dot.bottom {
    bottom: 0;
    top: 2.1rem;
@@ -126,3 +139,4 @@
 body > div.timer-block > div > div > span.flip-clock-divider.days > span{
   content: "Дней" !important;
 }
+*/

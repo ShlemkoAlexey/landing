@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <title>POTOKI LANDING</title>
@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="css/map.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/popup.css">
-
+  <link rel="shortcut icon" href="src/icon.png" type="image/x-icon">
 
 
 
@@ -123,7 +123,7 @@
       <p>ДО КОНЦА АКЦИИ ОСТАЛОСЬ:</p>
       <div class="timer"></div>
       <p>КАЧЕСТВЕННЫЙ ПРОФНАСТИЛ</p>
-      <p>НС20 &nbsp - &nbsp 51грн</p>
+      <p>НС20 - 51грн</p>
       <p>за м<sup>2</sup></p>
       <button class="buy-btn">ЗАКАЗАТЬ</button>
     </div>
@@ -384,21 +384,14 @@
     <div class="variants-block">
       <p>Варианты полимерного покрытия</p>
       <div style="background-color:#ffffff; color:black; border:1px solid gray;">Нет</div>
-      <div style="background-color:#284585;">5005</div>
-      <div style="background-color:#253279;">3011</div>
-      <div style="background-color:#2b473b;">6005</div>
-      <div style="background-color:#682329;">3005</div>
-      <div style="background-color:#423331;">8017</div>
-      <div style="background-color:#ffffff; color:black; border:1px solid gray;">9003</div>
-      <div style="background-color:#a7aab3;">9006</div>
-      <div style="background-color:#e0d4bc; color:black;">1014</div>
-      <div style="background-color:#426337;">6002</div>
-      <div style="background-color:#4e232e;">3009</div>
-      <div style="background-color:#5f3431;">3011</div>
-      <div style="background-color:#98999d;">7004</div>
-      <div style="background-color:#f5d94b; color:black;">1018</div>
-      <div style="background-color:#e0a00a; color:black;">1003</div>
-      <div style="background-color:#e5dbc8; color:black;">1015</div>
+      <div style="background-color:#462f2e;">8017</div>
+      <div style="background-color:#7a1d26;">3005</div>
+      <div style="background-color:#0f4439;">6005</div>
+      <div style="background-color:#172d7d;">5005</div>
+      <div style="background-color:#fffeff; color:black; border:1px solid gray;">9003</div>
+      <div style="background-color:#a7aab6;">9006</div>
+      <div style="background-color:#e6d4bd;color:black;">1015</div>
+
 
     </div>
 
@@ -595,27 +588,27 @@
     <p>О НАС В ЦИФРАХ</p>
 
     <div class="numerals-unit">
-      <h5>13 ЛЕТ</h5>
+      <h5><span class="spincrement">13</span> ЛЕТ</h5>
       <p>Качественной производственной деятельности</p>
     </div>
 
     <div class="numerals-unit">
-      <h5>20%</h5>
+      <h5><span class="spincrement">20</span> %</h5>
       <p>Ваших средств Вы экономите, заказывая профнастил у нас</p>
     </div>
 
-    <div class="numerals-unit">
-      <h5>80 000 м</h5>
+    <div class="numerals-unit" id="numerals-anchor">
+      <h5><span class="spincrement">80000</span>м</h5>
       <p>Профлиста мы можем производить в день</p>
     </div>
 
     <div class="numerals-unit">
-      <h5>07</h5>
+      <h5>0<span class="spincrement">7</span></h5>
       <p>Отделений по Украине</p>
     </div>
 
     <div class="numerals-unit">
-      <h5>25 ЛЕТ</h5>
+      <h5><span class="spincrement">25</span> ЛЕТ</h5>
       <p>Гарантия на наш профнастил</p>
     </div>
 
@@ -759,6 +752,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
   <script type="text/javascript" src="slick/slick.js"></script>
+  <script type="text/javascript" src="js/jquery.spincrement.js"></script>
   <script type="text/javascript" src="js/slider.js"></script>
   <script type="text/javascript" src="flipclock/flipclock.min.js"></script>
   <script type="text/javascript" src="js/timer.js"></script>
@@ -766,6 +760,7 @@
   <script type="text/javascript" src="js/objects.js"></script>
   <script type="text/javascript" src="js/header.js"></script>
   <script type="text/javascript" src="js/popup.js"></script>
+
   <script  defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvHpHNmH1ydMG3lfgJNZu4B-MlPhNPC7s&language=ru&callback=initMap">
   </script>

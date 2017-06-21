@@ -8,6 +8,7 @@ $(document).ready(function(){
   var schemeTop = $(".scheme-block").offset().top - a;
   var objectsTop = $(".objects-block").offset().top - a;
   var mapTop = $("#contacts-anchor").offset().top - a;
+  var numeralsTop = $("#numerals-anchor").offset().top - $(".numerals-block").height();
 
   $(".header-central-bottom ul li:nth-child(1)").on("click", function(){
     $("html, body").animate({ scrollTop: sliderTop+1}, scrollSpeed);
@@ -38,6 +39,7 @@ $(document).ready(function(){
   });
 
 
+  var numeralsNotIncremented = true;
 
   $(window).scroll(function(){
     if ($(this).scrollTop() < timerTop) {
@@ -62,27 +64,21 @@ $(document).ready(function(){
       $(".header-central-bottom ul li").removeClass("active");
       $(".header-central-bottom ul li:nth-child(7)").addClass("active");
     }
+
+    if (numeralsNotIncremented && $(this).scrollTop() > numeralsTop) {
+      numeralsIncrement();
+      numeralsNotIncremented = false;
+      console.log(123);
+    }
+
   });
+
+  function numeralsIncrement(){
+    $(".spincrement").spincrement({
+      from: 1,
+      t0: false,
+      thousandSeparator: " ", // Разделитель тыcячных
+      duration: 3000          // Продолжительность анимации в миллисекундах
+    });
+  };
 });
-
-
-
-
-/*
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 100) {
-    $('.scrollup').fadeIn();
-  } else {
-    $('.scrollup').fadeOut();
-  }
-});
-
-$('.scrollup').click(function(){
-  $("html, body").animate({ scrollTop: 0 }, 600);
-  return false;
-});
-
-
-console.log($(".slider-block").offset().top);
-console.log($(".timer-block").offset().top);
-*/
