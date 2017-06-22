@@ -90,8 +90,9 @@
   cursor: pointer;
 }
 
-.popup button:hover{
-
+.popup button[disabled]{
+  opacity: .5;
+  cursor: not-allowed;
 }
 
 .popup button:active{

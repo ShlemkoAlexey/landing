@@ -74,7 +74,35 @@ $(document).ready(function(){
   });
 
   function numeralsIncrement(){
-    $(".spincrement").spincrement({
+    $(".spincrement1").spincrement({
+      from: 1,
+      t0: false,
+      thousandSeparator: " ", // Разделитель тыcячных
+      duration: 3000          // Продолжительность анимации в миллисекундах
+    });
+
+    $(".spincrement2").spincrement({
+      from: 1,
+      t0: false,
+      thousandSeparator: " ", // Разделитель тыcячных
+      duration: 3000          // Продолжительность анимации в миллисекундах
+    });
+
+    $(".spincrement3").spincrement({
+      from: 1,
+      t0: false,
+      thousandSeparator: " ", // Разделитель тыcячных
+      duration: 1500          // Продолжительность анимации в миллисекундах
+    });
+
+    $(".spincrement4").spincrement({
+      from: 1,
+      t0: false,
+      thousandSeparator: " ", // Разделитель тыcячных
+      duration: 4500          // Продолжительность анимации в миллисекундах
+    });
+
+    $(".spincrement5").spincrement({
       from: 1,
       t0: false,
       thousandSeparator: " ", // Разделитель тыcячных

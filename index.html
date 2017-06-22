@@ -124,7 +124,7 @@
       <p>ДО КОНЦА АКЦИИ ОСТАЛОСЬ:</p>
       <div class="timer"></div>
       <p>КАЧЕСТВЕННЫЙ ПРОФНАСТИЛ</p>
-      <p>НС20 - 51грн</p>
+      <p><span id="timer-action-model">НС20</span> - <span id="timer-action-price">51</span> грн</p>
       <p>за м<sup>2</sup></p>
       <button class="buy-btn">ЗАКАЗАТЬ</button>
     </div>
@@ -462,10 +462,10 @@
   <div class="objects-block">
     <p class="objects-block-logo">НАШИ ОБЬЕКТЫ - НАША ГОРДОСТЬ</p>
     <div class="objects-block-carouser">
-      <img src="src/objects/slide1.jpg" alt="1" class="active">
+      <img src="src/objects/slide1.png" alt="1" class="active">
       <img src="src/objects/slide2.png" alt="2">
       <img src="src/objects/slide3.png" alt="3">
-      <img src="src/objects/slide1.jpg" alt="4">
+      <img src="src/objects/slide3.png" alt="4">
     </div>
     <!-- <img src="src/objects/arrowleft.png" alt="arrow" class="arrow arrow-left"> -->
     <!-- <img src="src/objects/arrowright.png" alt="arrow" class="arrow arrow-right"> -->
@@ -476,7 +476,7 @@
           <img src="src/objects/img1.jpg" alt="img">
         </div>
         <div class="unit-right">
-          <img src="src/objects/slide1.jpg" alt="logo">
+          <img src="src/objects/slide1.png" alt="logo">
           <p><span class="colored">тип объекта:</span> ????</p>
           <p><span class="colored">назначение:</span> облицовка</p>
           <p><span class="colored">обьем:</span> 10 000 м2</p>
@@ -524,7 +524,7 @@
           <img src="src/objects/img4.jpg" alt="img">
         </div>
         <div class="unit-right">
-          <img src="src/objects/slide1.jpg" alt="logo">
+          <img src="src/objects/slide1.png" alt="logo">
           <p><span class="colored">тип объекта:</span> ????</p>
           <p><span class="colored">назначение:</span> облицовка</p>
           <p><span class="colored">обьем:</span> 10 000 м2</p>
@@ -618,27 +618,27 @@
     <p>О НАС В ЦИФРАХ</p>
 
     <div class="numerals-unit">
-      <h5><span class="spincrement">13</span> ЛЕТ</h5>
+      <h5><span class="spincrement spincrement1">13</span> ЛЕТ</h5>
       <p>Качественной производственной деятельности</p>
     </div>
 
     <div class="numerals-unit">
-      <h5><span class="spincrement">20</span> %</h5>
+      <h5><span class="spincrement spincrement2">20</span> %</h5>
       <p>Ваших средств Вы экономите, заказывая профнастил у нас</p>
     </div>
 
     <div class="numerals-unit" id="numerals-anchor">
-      <h5><span class="spincrement">80000</span>м</h5>
+      <h5><span class="spincrement spincrement3">80000</span>м</h5>
       <p>Профлиста мы можем производить в день</p>
     </div>
 
     <div class="numerals-unit">
-      <h5>0<span class="spincrement">7</span></h5>
+      <h5>0<span class="spincrement spincrement4">7</span></h5>
       <p>Отделений по Украине</p>
     </div>
 
     <div class="numerals-unit">
-      <h5><span class="spincrement">25</span> ЛЕТ</h5>
+      <h5><span class="spincrement spincrement5">25</span> ЛЕТ</h5>
       <p>Гарантия на наш профнастил</p>
     </div>
 
@@ -725,16 +725,16 @@
     <h5>Заполните, пожалуйста, форму для оформления заказа.</h5>
     <p>наш менеджер обязательно Вам перезвонит.</p>
     <div class="">
-      <input placeholder="ИМЯ">
-      <input placeholder="ТЕЛЕФОН">
-      <input placeholder="МОДЕЛЬ ПРОФИЛЯ">
+      <input placeholder="ИМЯ" id="popup1-name">
+      <input placeholder="ТЕЛЕФОН" id="popup1-phone"  onkeypress='return isNumber(event)'>
+      <input placeholder="МОДЕЛЬ ПРОФИЛЯ" id="popup1-model">
     </div>
     <div class="">
-      <input placeholder="ФАМИЛИЯ">
-      <input placeholder="Е-MAIL">
-      <input placeholder="КОЛИЧЕСТВО">
+      <input placeholder="ФАМИЛИЯ" id="popup1-surname">
+      <input placeholder="Е-MAIL" id="popup1-email">
+      <input placeholder="КОЛИЧЕСТВО" id=popup1-count>
     </div>
-    <button>ОТПРАВИТЬ ЗАКАЗ</button>
+    <button id="popup1-send" disabled>ОТПРАВИТЬ ЗАКАЗ</button>
   </div>
 
 
@@ -744,16 +744,16 @@
     <h5>Заполните, пожалуйста, форму для уточнения наличия.</h5>
     <p>наш менеджер обязательно уточнит наличие модели профиля на складе и свяжется с вами. </p>
     <div class="">
-      <input placeholder="ИМЯ">
-      <input placeholder="ТЕЛЕФОН">
-      <input placeholder="МОДЕЛЬ ПРОФИЛЯ">
+      <input placeholder="ИМЯ" id="popup2-name">
+      <input placeholder="ТЕЛЕФОН" id="popu2-phone"  onkeypress='return isNumber(event)'>
+      <input placeholder="МОДЕЛЬ ПРОФИЛЯ" id="popup2-model">
     </div>
     <div class="">
-      <input placeholder="ФАМИЛИЯ">
-      <input placeholder="Е-MAIL">
-      <input placeholder="КОЛИЧЕСТВО">
+      <input placeholder="ФАМИЛИЯ" id="popup2-surname">
+      <input placeholder="Е-MAIL" id="popup2-email">
+      <input placeholder="КОЛИЧЕСТВО" id=popup2-count>
     </div>
-    <button>УТОЧНИТЬ</button>
+    <button id="popup2-send" disabled>УТОЧНИТЬ</button>
   </div>
   <div class="popup" id="popup2">
     <img src="src/popupclose.png" alt="close" class="close">
@@ -773,7 +773,14 @@
     <p><a href="https://potoki.ua">"Производственная компания ПОТОКИ ГРУПП"</a></p>
   </footer>
 
-
+  <script type="text/javascript">
+  function isNumber(event){
+    var charCode = (event.which) ? event.which : event.keyCode;
+    if (charCode > 31 && (charCode < 48 || charCode > 57))
+    return false;
+    return true;
+  }
+  </script>
 
 
 

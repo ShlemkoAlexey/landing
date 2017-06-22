@@ -10,6 +10,7 @@
 .objects-block-carouser{
   width: 80%;
   margin-left: 10%;
+
 }
 .objects-block-carouser img{
   opacity: .2;
@@ -18,6 +19,7 @@
   cursor: pointer;
   outline:0;
   width: 15vw;
+  vertical-align: middle;
 }
 .objects-block-carouser img:hover{
   opacity: 1;
