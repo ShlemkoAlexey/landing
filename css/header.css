@@ -4,7 +4,7 @@ header{
     background: white;
     position: fixed;
     width: 100%;
-    height: 4vw;
+    /*height: 4vw;*/
     top: 0;
 }
 
@@ -14,25 +14,13 @@ header div{
 }
 
 .header-left{
-  width: 40%;
-
+  width: 38%;
 }
 
 .header-left img{
   height: 3.5vw;
   margin: .25vw;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -53,7 +41,7 @@ header div{
   text-transform: uppercase;
 }
 .header-central .header-central-top p a{
-
+  color: #5596fb;
 }
 
 
@@ -111,7 +99,8 @@ header div{
 }
 
 .header-right .social-networks a img{
-  width: .9vw;
+  width: 1vw;
+
 }
 
 
@@ -126,4 +115,5 @@ header div{
   text-transform: uppercase;
   text-decoration: none;
   padding: .5vw 1vw;
+  font-size: .9vw;
 }

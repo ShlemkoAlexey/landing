@@ -8,6 +8,6 @@ $(document).ready(function(){
     arrows: false,
     dots: true,
     fade: true,
-    speed: 2000
-  });  
+    speed: 500
+  });
 });

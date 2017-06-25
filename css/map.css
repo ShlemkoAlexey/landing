@@ -26,7 +26,7 @@
 }
 .route ul li{
   position: relative;
-  background: white;
+
   margin: 0;
   /*width: 40vw;*/
   cursor: pointer;
@@ -38,16 +38,16 @@
   border-left: 2px solid #409aff;
   border-right: 2px solid #409aff;
   border-bottom: 2px solid #409aff;
-
-  width: 130%;
+  width: 80%;
+  background: white;
 }
 .route ul li:nth-child(n+3){
     display: none;
   /*border-bottom: 1px solid #0598ff;*/
   border-left: 2px solid #409aff;
   border-right: 2px solid #409aff;
-
-  width: 130%;
+  background: white;
+  width: 80%;
 }
 .route ul li a{
   display: block;
@@ -66,16 +66,21 @@
 .route ul li p{
   color: white;
   display: inline-block;
-  /*border: 2px solid #0598ff;*/
   border-left: none;
   font-size: 2vw;
   padding: .5vw 1vw ;
   cursor: pointer;
   transition: .3s;
-  background: #409aff;
+  /*background: #409aff;*/
   text-decoration: none;
   margin: 0;
-  /*width: 40vw;*/
+  width: 15vw;
+  background-color: none;
+  background-image: url(../src/map/route.png);
+  background-size: cover;
+  background-repeat: none;
+  padding-right: 5vw;
+
 }
 /*.route p:hover{
   color: white;
@@ -90,7 +95,8 @@
   position: absolute;
   top: -.05vw;
   z-index: -1;
-  left: -3.5vw;;
+  left: -3.5vw;
+  display: none;
 }
 
 

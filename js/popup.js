@@ -104,12 +104,12 @@ $("#popup2-send").on("click", function(){
 });
 
 
-var popup1email = false;
+var popup1email = true;
 var popup1phone = false;
 
-var popup2email = false;
+var popup2email = true;
 var popup2phone = false;
-
+/*
 $('#popup1-email').keyup(function(event) {
   if( validateEmail($('#popup1-email').val())){
     $('#popup1-email').css("color", "black");
@@ -122,7 +122,7 @@ $('#popup1-email').keyup(function(event) {
     $('#popup1-email').css("color", "red");
     $("#popup1-send").prop("disabled", true);
   }
-});
+});*/
 
 $('#popup1-phone').keyup(function(event) {
   if( $("#popup1-phone").val().length > 6 ){
@@ -140,7 +140,7 @@ $('#popup1-phone').keyup(function(event) {
 
 
 
-
+/*
 $('#popup2-email').keyup(function(event) {
   if( validateEmail($('#popup2-email').val())){
     $('#popup2-email').css("color", "black");
@@ -153,7 +153,7 @@ $('#popup2-email').keyup(function(event) {
     $('#popup2-email').css("color", "red");
     $("#popup2-send").prop("disabled", true);
   }
-});
+});*/
 
 $('#popup2-phone').keyup(function(event) {
   if( $("#popup2-phone").val().length > 6 ){

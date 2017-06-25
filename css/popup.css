@@ -66,6 +66,7 @@
   display: inline-block;
   width: 40%;
   text-align: center;
+  position: relative;
 }
 .popup div input{
   display: block;
@@ -121,4 +122,14 @@
 .fail-message{
   color: red;
   border: 1px solid red;
+}
+
+.nessesary-field{
+  position: absolute !important;
+  color: red;
+  font-size: .9vw;
+  width: 100vw !important;
+  text-align: left !important;
+  top: 52%;
+  left: 7vw;
 }

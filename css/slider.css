@@ -1,5 +1,6 @@
 .slider-block{
   margin-top: 4vw;
+  width: 100%;
 }
 
 .slider-unit{
@@ -87,7 +88,7 @@
 .slider-block .slick-dots{
   position: absolute;
   bottom: 0;
-  padding: 1vw;
+  padding-bottom: 1vw;
 }
 .slick-dots li button:before{
   font-size: 1vw;
