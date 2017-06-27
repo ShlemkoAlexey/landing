@@ -22,16 +22,18 @@
 
 }
 
-body > div.timer-block > div > div > span.flip-clock-divider.days > span{  right: -95px !important;}
-body > div.timer-block > div > div > span.flip-clock-divider.hours > span.flip-clock-label{  right: -95px !important;}
-body > div.timer-block > div > div > span.flip-clock-divider.minutes > span.flip-clock-label{  right: -105px !important;}
-body > div.timer-block > div > div > span.flip-clock-divider.seconds > span.flip-clock-label{  right: -105px !important;}
+body > div.timer-block > div > div > span.flip-clock-divider.days > span{  right: -95px !important;  text-shadow: 1px 1px 2px black, 0 0 1px black;}
+body > div.timer-block > div > div > span.flip-clock-divider.hours > span.flip-clock-label{  right: -95px !important;  text-shadow: 1px 1px 2px black, 0 0 1px black;}
+body > div.timer-block > div > div > span.flip-clock-divider.minutes > span.flip-clock-label{  right: -105px !important;  text-shadow: 1px 1px 2px black, 0 0 1px black;}
+body > div.timer-block > div > div > span.flip-clock-divider.seconds > span.flip-clock-label{  right: -105px !important;  text-shadow: 1px 1px 2px black, 0 0 1px black;}
 .timer-unit{
   margin-left: 15vw;
 }
 .timer-unit p{
   margin: 0;
   padding: 0;
+  text-shadow: 1px 1px 2px black, 0 0 1px black;
+  max-width: 60%;
   /*text-align: justify;*/
 }
 .timer-unit p:nth-of-type(1){
