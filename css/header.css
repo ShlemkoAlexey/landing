@@ -87,7 +87,35 @@ header div{
 
 .header-right{
   width: 19%;
+  vertical-align: top;
 }
+.header-right a{
+  display: inline-block;
+  vertical-align: top;
+  margin-top: .5vw;
+}
+.header-right a img{
+  height: 2.4vw;
+  transition: .3s;
+}
+.header-right a img:hover{
+  background: lightblue;
+  transition: .3s;
+}
+.main-site-link{
+  background: #5ea6fc;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .65vw 1vw;
+  font-size: .9vw;
+    transition: .3s;
+}
+.main-site-link:hover{
+  color: lightblue;
+  transition: .3s;
+}
+/*
 .header-right .social-networks{
   display: inline-block;
   margin-top:  .8vw;
@@ -100,10 +128,13 @@ header div{
 
 .header-right .social-networks a img{
   width: 1vw;
-
+  height: 1vw;
 }
+*/
 
 
+
+/*
 .header-right .main-site{
   display: inline-block;
   margin-top: 1.3vw;
@@ -116,4 +147,38 @@ header div{
   text-decoration: none;
   padding: .5vw 1vw;
   font-size: .9vw;
+}*/
+
+
+/*
+.header-right .main-site a img{
+  margin-top: .8vw;
+  height: 2.2vh;
+  width: 10vw;
 }
+*/
+
+
+/*
+.header-right table tr td{
+  /*border: 1px dashed black;*/
+/*
+}
+.header-right table tr td a{
+  display: block;
+}
+.header-right table tr td a img{
+  width: 1vw;
+  margin: 0;
+  padding: 0;
+}
+.main-site-link{
+  background: #5ea6fc;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.3vh 1vw;
+  font-size: .9vw;
+
+}
+*/

@@ -1,9 +1,17 @@
-var date = new Date();
+/*var date = new Date();
 var fromStartOfWeek = (date.getDay()-1)*86400 + date.getHours()*3600 + date.getMinutes()*60 + date.getSeconds();
 var secondsInWeek = 3600 * 24 * 7;
+*/
+
+var date = new Date();
+var monday = new Date(2017, 5, 5)
+var dateDif = ((date - monday)/1000).toFixed(0) % 604800;
+var secondsToEndOfWeek = 604800 - dateDif;
+var weekCounter = ((date - monday) / 604800000).toFixed(0)%2;
 
 
-var timer = $('.timer').FlipClock(secondsInWeek - fromStartOfWeek, {
+
+var timer = $('.timer').FlipClock(secondsToEndOfWeek, {
   clockFace: 'DailyCounter',
   countdown: true
 });
@@ -13,11 +21,11 @@ $("body > div.timer-block > div > div > span.flip-clock-divider.hours > span.fli
 $("body > div.timer-block > div > div > span.flip-clock-divider.minutes > span.flip-clock-label").html("Минут");
 $("body > div.timer-block > div > div > span.flip-clock-divider.seconds > span.flip-clock-label").html("Секунд");
 
-
+/*
 var actionCounter = getWeekNumber(date)[1]%2;
-console.log(actionCounter);
+*/
 
-if (actionCounter == 0) {
+if (weekCounter == 1) {
   $("#timer-action-model").html(" С-8 ");
   $("#timer-action-price").html("50");
 } else {
@@ -26,7 +34,7 @@ if (actionCounter == 0) {
 }
 
 
-
+/*
 function getWeekNumber(d) {
   // Copy date so don't modify original
   d = new Date(+d);
@@ -41,3 +49,4 @@ function getWeekNumber(d) {
   // Return array of year and week number
   return [d.getFullYear(), weekNo];
 }
+*/
