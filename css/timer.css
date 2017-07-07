@@ -33,7 +33,7 @@ body > div.timer-block > div > div > span.flip-clock-divider.seconds > span.flip
   margin: 0;
   padding: 0;
   text-shadow: 1px 1px 2px black, 0 0 1px black;
-  max-width: 60%;
+  /*max-width: 80%;*/
   /*text-align: justify;*/
 }
 .timer-unit p:nth-of-type(1){
