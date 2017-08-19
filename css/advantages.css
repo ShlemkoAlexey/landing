@@ -22,7 +22,7 @@
 .advantages-block div h5{
   font-size: 1.25vw;
   color: #5ea6fc;
-  height: 3.5vw;
+  /*height: 3.5vw;*/
 }
 .advantages-block div p{
   font-size: .8vw;
